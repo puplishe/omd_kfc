@@ -6,7 +6,7 @@ if __name__ == '__main__':
     dbinit()
     data = get_api_data()
     written = Crud()
-    # for item in data:
-    # print(item)
-    # written.write(item)
+    for item in data:
+        print(item)
+        written.write(item)
     print(written.get_breakfast_data('Новосибирск', '08:45:00'))
